@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!--Bungee font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Controle Financeiro</h1>
+
+    <main>
+        <div class="container">
+            <div class="form-area">
+                <h2>Adicionar Gasto</h2>
+
+                <input type="date" id="date">
+                <input type="text" id="description" placeholder="Descrição">
+                <input type="text" id="category" placeholder="Categoria">
+                <input type="number" id="amount" placeholder="Valor">
+
+                <button onclick="addExpense()">Adicionar</button>
+            </div>
+
+            <section class="table">
+                <h2>Planilha</h2>
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Valor</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </div>
+
+        <div class="container">
+            <div class="grafic">
+                <h2>Gráfico</h2>
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="storage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

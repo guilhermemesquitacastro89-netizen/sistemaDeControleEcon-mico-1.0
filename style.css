@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #141414;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bungee';
+    color: #ffffff;
+    text-shadow: 0px 1px 4px rgb(255, 255, 255);
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Bungee';
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    padding: 20px;
+    margin: 20px;
+}
+
+.form-area {
+    background: rgb(39, 39, 39);
+    padding: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.table {
+    background: rgb(39, 39, 39);
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+#table {
+    background-color: #434343;
+    border-radius: 8px;
+    color: #fff;
+
+}*/
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #2a2a2a;
+}
+
+#table thead {
+    background: linear-gradient(135deg, #131313, #171717);
+}
+
+#table thead th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#table tbody tr {
+    border-bottom: 1px solid #1e293b;
+    transition: 0.2s;
+}
+
+#table tbody tr:hover {
+    background: rgba(8, 12, 68, 0.247);
+}
+
+#table td {
+    padding: 14px;
+}
+
+#table button {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+}
+
+#table button:hover {
+    box-shadow: 0 6px 14px rgba(239, 68, 68, 0.4);
+}
+
+.grafic {
+    background: rgb(39, 39, 39);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    background: #404040;
+    color: #fff;
+
+    align-self: center;
+}
+
+button {
+    padding: 12px 22px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(56, 189, 248, 0.4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
